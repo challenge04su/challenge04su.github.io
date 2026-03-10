@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dev Blog</title>
+    <title>My Portfolio Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,9 +12,9 @@
         <div class="nav-links">
             <a href="index.html" class="active">Home</a>
             <a href="engine.html">Engine</a>
-            <a href="#">Programming</a>
-            <a href="#">Troubleshooting</a>
-            <a href="#">Portfolio</a>
+            <a href="programming.html">Programming</a>
+            <a href="troubleshooting.html">Troubleshooting</a>
+            <a href="portfolio.html">Portfolio</a>
         </div>
     </nav>
 
@@ -25,24 +25,43 @@
 
     <main class="container">
         <div class="home-grid">
-            <div class="category-card">
+            
+            <div class="category-card" id="home-engine">
                 <h3>Engine</h3>
-                <div class="thumbnail-box">최근에 올린 글 썸네일</div>
+                <a href="engine.html">
+                    <div class="thumbnail-box">최근 글 없음</div>
+                    <p class="latest-title"></p>
+                </a>
             </div>
-            <div class="category-card">
+
+            <div class="category-card" id="home-portfolio">
                 <h3>Portfolio</h3>
-                <div class="thumbnail-box">최근에 올린 글 썸네일</div>
+                <a href="portfolio.html">
+                    <div class="thumbnail-box">최근 글 없음</div>
+                    <p class="latest-title"></p>
+                </a>
             </div>
-            <div class="category-card">
+
+            <div class="category-card" id="home-programming">
                 <h3>Programming</h3>
-                <div class="thumbnail-box">최근에 올린 글 썸네일</div>
+                <a href="programming.html">
+                    <div class="thumbnail-box">최근 글 없음</div>
+                    <p class="latest-title"></p>
+                </a>
             </div>
-            <div class="category-card">
+
+            <div class="category-card" id="home-troubleshooting">
                 <h3>TroubleShooting</h3>
-                <div class="thumbnail-box">최근에 올린 글 썸네일</div>
+                <a href="troubleshooting.html">
+                    <div class="thumbnail-box">최근 글 없음</div>
+                    <p class="latest-title"></p>
+                </a>
             </div>
+
         </div>
     </main>
+
+    <script src="home-updates.js"></script>
 
 </body>
 </html>

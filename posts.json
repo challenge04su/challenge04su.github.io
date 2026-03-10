@@ -1,20 +1,26 @@
 [
     {
         "category": "engine",
-        "title": "언리얼 엔진 기초 설정",
-        "thumbnail": "https://via.placeholder.com/150",
+        "title": "언리얼 엔진 5 설치 및 환경 설정",
+        "thumbnail": "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
         "link": "post_engine_01.html"
     },
     {
         "category": "programming",
-        "title": "C++ 캐릭터 이동 로직",
-        "thumbnail": "https://via.placeholder.com/150",
+        "title": "C++ 캐릭터 이동 컴포넌트 구현",
+        "thumbnail": "https://images.unsplash.com/photo-1587620962725-abab7fe55159",
         "link": "post_prog_01.html"
     },
     {
+        "category": "troubleshooting",
+        "title": "애니메이션 블루프린트 리타겟팅 오류 해결",
+        "thumbnail": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97",
+        "link": "post_debug_01.html"
+    },
+    {
         "category": "portfolio",
-        "title": "퍼즐 탈출 게임 완성",
-        "thumbnail": "https://via.placeholder.com/150",
+        "title": "Puzzle Escape Game - 개발 기획서",
+        "thumbnail": "https://images.unsplash.com/photo-1550745165-9bc0b252726f",
         "link": "post_port_01.html"
     }
 ]
