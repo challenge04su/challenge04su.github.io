@@ -1,0 +1,114 @@
+/* 기본 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 상단 네비게이션 */
+.navbar {
+    border-bottom: 2px solid #000;
+    padding: 20px 0;
+    position: sticky; /* 스크롤 시 상단 고정 */
+    top: 0;
+    background: white;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 모바일에서 메뉴가 넘치면 다음줄로 */
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.active {
+    background-color: #FFEB3B;
+    border-radius: 15px;
+}
+
+/* 컨테이너 */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 프로필 섹션 (Home 전용) */
+.profile-section {
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 그리드 시스템 (반응형) */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* PC: 2열 */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* PC: 4열 */
+    gap: 20px;
+}
+
+/* 카드 및 썸네일 */
+.post-item, .category-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail-box, .post-thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* 비율 유지의 핵심 */
+    border: 2px solid #000;
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* 모바일/태블릿 대응 (미디어 쿼리) */
+
+/* 태블릿 (1024px 이하) */
+@media (max-width: 1024px) {
+    .post-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2열로 변경 */
+    }
+}
+
+/* 모바일 (640px 이하) */
+@media (max-width: 640px) {
+    .home-grid, .post-grid {
+        grid-template-columns: 1fr; /* 1열로 꽉 차게 변경 */
+    }
+    
+    .nav-links a {
+        font-size: 0.9rem;
+        margin: 0 5px;
+    }
+
+    .profile-section h1 {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "category": "engine",
+        "title": "언리얼 엔진 기초 설정",
+        "thumbnail": "https://via.placeholder.com/150",
+        "link": "post_engine_01.html"
+    },
+    {
+        "category": "programming",
+        "title": "C++ 캐릭터 이동 로직",
+        "thumbnail": "https://via.placeholder.com/150",
+        "link": "post_prog_01.html"
+    },
+    {
+        "category": "portfolio",
+        "title": "퍼즐 탈출 게임 완성",
+        "thumbnail": "https://via.placeholder.com/150",
+        "link": "post_port_01.html"
+    }
+]
